@@ -3,7 +3,7 @@ const dbConn = require("./sql/connectionDb");
 const app  = express();
 
 app.get("/",(req,res)=> {
-    res.send("<h1>Hello</h1>");
+    res.send("<h1>Hello this is my firrst website</h1>");
 });
 
 dbConn.getConnection().authenticate()
@@ -21,7 +21,7 @@ dbConn.getConnection().authenticate()
 
 app.get("/", (req, res) => {
     res.status(200).json({
-        msg : "Welcome to Video File Server"
+        msg : "Welcome to Video File Server this is servet site"
     });
 });
 
